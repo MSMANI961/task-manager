@@ -1,0 +1,10 @@
+{
+  "go.toolsEnvVars": {
+    "GOCACHE": "${workspaceFolder}\\.gocache",
+    "GOTMPDIR": "${workspaceFolder}\\.gotmp"
+  },
+  "go.testEnvVars": {
+    "GOCACHE": "${workspaceFolder}\\.gocache",
+    "GOTMPDIR": "${workspaceFolder}\\.gotmp"
+  }
+}
