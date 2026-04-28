@@ -30,6 +30,7 @@ r.Use(cors.New(cors.Config{
 		AllowOrigins: []string{
 			"http://localhost:3000",
 			"http://localhost:4200",
+			"https://sunny-twilight-6f1d66.netlify.app", 
 		},
 		AllowMethods: []string{
 			"GET", "POST", "PUT", "DELETE", "OPTIONS",
