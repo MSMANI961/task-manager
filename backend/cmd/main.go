@@ -25,14 +25,12 @@ if err != nil {
 
 
 r.Use(cors.New(cors.Config{
-	AllowOrigins:     []string{"http://localhost:4200"},
-	AllowMethods:     []string{"GET", "POST", "PUT", "DELETE"},
-	AllowHeaders:     []string{"Origin", "Content-Type"},
+	AllowOrigins: []string{
+		"http://localhost:3000",   // local testing
+		"http://localhost:4200",   // angular dev
+	},
+	AllowMethods: []string{"GET", "POST", "PUT", "DELETE"},
+	AllowHeaders: []string{"Origin", "Content-Type"},
 	AllowCredentials: true,
+	MaxAge: 12 * time.Hour,
 }))
-
-routes.SetupRoutes(r)
-
-r.Run(":8080")
-	
-}
