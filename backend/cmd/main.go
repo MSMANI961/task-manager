@@ -4,10 +4,10 @@ import (
 	"fmt"
 
 	"task-manager/config"
-	"task-manager/routes"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
+	"time"
 )
 
 func main() {
@@ -33,4 +33,4 @@ r.Use(cors.New(cors.Config{
 	AllowHeaders: []string{"Origin", "Content-Type"},
 	AllowCredentials: true,
 	MaxAge: 12 * time.Hour,
-}))
+}))}
